@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Advance Search</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="header-links">
-            <a href="index.html">Google Search</a>
-            <a href="image-search.html">Image Search</a>
-        </div>
-        <div class="adv-sch-header">
-            <label style="margin-left:10px"> Advanced Search</label>
-        </div>
-        <div class="adv-form-elements">
-
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Advance Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-links">
+        <a href="index.html">Google Search</a>
+        <a href="image-search.html">Image Search</a>
+    </div>
+    <div class="adv-sch-header">
+        <label style="margin-left:10px"> Advanced Search</label>
+    </div>
+    <div class="adv-form-section">
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <div class="adv-form-elements">
+                <div class="adv-row">
+                    <label class="adv-label" for="all-words">all these words:</label>
+                    <input class="adv-textarea" type="text" id="all-words" name="all-these-words">
+                </div>
+                <div class="adv-row">
+                    <label class="adv-label" for="exact-phrase">this exact word or phrase:</label>
+                    <input class="adv-textarea" type="text" id="exact-phrase" name="this-exact-word-or-phrase">
+                </div>
+                <div class="adv-row">
+                    <label class="adv-label" for="any-words">any of these words:</label>
+                    <input class="adv-textarea" type="text" id="any-words" name="any-of-these-words">
+                </div>
+                <div class="adv-row">
+                    <label class="adv-label" for="none-words">none of these words:</label>
+                    <input class="adv-textarea" type="text" id="none-words" name="none-of-these-words">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
 </html>
