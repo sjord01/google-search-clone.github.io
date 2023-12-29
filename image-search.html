@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Image Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header-links">
+            <a href="index.html">Google Search</a>
+            <a href="https://www.google.com/advanced_search">Advanced Search</a>
+        </div>
+        <div class="form-section">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <!-- tbm = "to be matched", isch = "Image Search" -->
+                    <input type="hidden" name="tbm" value="isch">
+                        <div class="form-elements">
+                            <input type="text" name="q">
+                                <div class="form-btns">
+                                    <input type="submit" value="Google Image Search">
+                                </div>
+                        </div>
+            </form>
+        </div>
+    </body>
+</html>
