@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Use viewport height to make sure the body takes the full height of the viewport */
+    margin: 8px;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-color: #ffffff;
+    color: #202124;
+    min-width: 400px;
+}
+
+.form-section {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    display: block;
+}
+
+.form-elements {
+    margin: 0 auto;
+    max-width: 584px;
+    padding-top: 6px;
+    position: relative;
+}
+
+input[type="text"] {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    padding: 5px 8px 0 14px;
+    background: #ffffff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    width: 584px;
+    transition: box-shadow 0.1s ease; /* Add transition for smooth effect */
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0); /* Apply box shadow on hover */
+}
+
+.form-btns {
+    height: 70px;
+    padding-top: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
