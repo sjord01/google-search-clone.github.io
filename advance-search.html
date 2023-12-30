@@ -11,26 +11,40 @@
         <a href="image-search.html">Image Search</a>
     </div>
     <div class="adv-sch-header">
-        <label style="margin-left:10px"> Advanced Search</label>
+        Advanced Search
     </div>
+    <div class="grey-divider"></div>
     <div class="adv-form-section">
         <form action="https://www.google.com/search" method="GET" target="_blank">
             <div class="adv-form-elements">
                 <div class="adv-row">
+                    <div class="adv-label"><span class="label-title">Find Pages with...</span></div>
+                    <div  style="width: 50%;"></div>
+                    <div class="adv-usage"><span class="usage-title">To do this in the search box</span></div>
+                </div>
+                <div class="adv-row">
                     <label class="adv-label" for="all-words">all these words:</label>
-                    <input class="adv-textarea" type="text" id="all-words" name="all-these-words">
+                    <input class="adv-textarea" value autofocus="autofocus" id="all-words" name="as_q" type="text">
+                    <div class="adv-usage">Type the important words:   <span class="usage-txt">tricolor rat terrier</span></div>
                 </div>
                 <div class="adv-row">
                     <label class="adv-label" for="exact-phrase">this exact word or phrase:</label>
-                    <input class="adv-textarea" type="text" id="exact-phrase" name="this-exact-word-or-phrase">
+                    <input class="adv-textarea" value type="text" id="exact-phrase" name="as_epq">
+                    <div class="adv-usage">Put exact words in quotes:  <span class="usage-txt">"rat terrier"</span></div>
                 </div>
                 <div class="adv-row">
                     <label class="adv-label" for="any-words">any of these words:</label>
-                    <input class="adv-textarea" type="text" id="any-words" name="any-of-these-words">
+                    <input class="adv-textarea" value type="text" id="any-words" name="as_oq">
+                    <div class="adv-usage">Type OR between all the words you want:  <span class="usage-txt">miniature OR standard</span></div>
                 </div>
                 <div class="adv-row">
                     <label class="adv-label" for="none-words">none of these words:</label>
-                    <input class="adv-textarea" type="text" id="none-words" name="none-of-these-words">
+                    <input class="adv-textarea" value type="text" id="none-words" name="as_eq">
+                    <div class="adv-usage">Put a minus sign just before words you don't want:  <span class="usage-txt">-rodent, -"Jack Russell"</span></div>
+                </div>
+                <div class="adv-form-btn">
+                    <input name="tbs" type="hidden" value="">
+                    <input class="adv-btn" type="submit" value="Advance Google Search">
                 </div>
             </div>
         </form>

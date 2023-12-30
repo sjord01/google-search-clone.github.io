@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     height: 100vh; /* Use viewport height to make sure the body takes the full height of the viewport */
-    margin: 8px;
+    margin: 16px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -69,14 +69,14 @@ form {
     align-items: center;
 }
 
-input[type="submit"] {
+.reg-btn {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
     font-family: arial,sans-serif;
     font-size: 14px;
-    margin: 11px 4px;
+    margin: 12px 4px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
@@ -86,7 +86,7 @@ input[type="submit"] {
     user-select: none;
 }
 
-input[type="submit"]:hover {
+.reg-btn:hover {
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
@@ -96,15 +96,35 @@ input[type="submit"]:hover {
 /* Advance Search Page */
 
 .adv-sch-header {
+    width: 100%;
+    align-items: left;
     color: #d93025;
     font-size: 20px;
-    margin: 25px 35px;
+    margin: 32px;
+    padding-left: 16px;
+}
+
+.grey-divider {
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.label-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.usage-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #777;
+    padding-left: 10px;
 }
 
 .adv-form-section {
     width: 100%;
-    margin: 40px 2% 0 45px;
-    background-color: red;
+    margin: 40px 16px 0 45px;
 }
 
 .adv-form-elements {
@@ -115,29 +135,32 @@ input[type="submit"]:hover {
 .adv-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
     justify-content: flex-start;
+    padding-top: 18px;
 }
 
 .adv-label,
-.adv-textarea {
+.adv-textarea,
+.adv-usage, {
     box-sizing: border-box;
     padding: 5px;
 }
 
 .adv-label {
+    font-size: 14px;
     text-align: left;
-    width: 50%;
+    min-width: 167px;
+    width: 16%;
 }
 
 .adv-textarea {
-    margin-left: 5px; /* Add margin between label and textarea */
     width: 50%;
     border-radius: 1px;
     border: 1px solid #d9d9d9;
     border-top: 1px solid #c0c0c0;
-    font-size: 13px;
-    height: 25px;
+    font-size: 14px;
+    height: 44px;
     padding: 1px 8px;
 }
 
@@ -147,11 +170,59 @@ input[type="submit"]:hover {
     outline: none;
 }
 
-@media (max-width: 600px) {
-    .adv-label,
+.adv-usage {
+    width: 32%;
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+}
+
+.usage-txt {
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.adv-form-btn {
+    display: flex;
+    flex-direction: row;
+    width: 66%;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.adv-btn {
+    border: 1px solid #3079ed;
+    color: #fff;
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    user-select: none;
+    line-height: 100%;
+    height: 30px;
+    min-width: 120px;
+}
+
+.adv-btn:hover {
+    background-color: #357ae8;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+    border-image: initial;
+}
+
+
+@media (max-width: 1070px) {
+    .adv-usage {
+        display: none;
+    }
+
     .adv-textarea {
+        width: 82%;
+    }
+
+    .adv-form-btn {
         width: 100%;
-        text-align: left;
-        margin-left: 0;
     }
 }
